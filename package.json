@@ -1,0 +1,15 @@
+{
+  "name": "kinesis-reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hcl-to-json": "^0.1.1"
+  }
+}

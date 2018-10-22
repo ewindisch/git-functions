@@ -1,0 +1,14 @@
+service: github-measure-events
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  github-measure-kinesis-run-ecs:
+    handler: handler.handler
+
+    events:
+      - stream:
+        type: kinesis
+        arn: github-measure-events
