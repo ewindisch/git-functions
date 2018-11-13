@@ -2,7 +2,7 @@
 
 _THIS DOES NOT WORK CURRENTLY_
 
-# OpenActions - Github Actions Clone
+# Git Functions, an open GitHub Actions runtime
 
 This implements the Github Actions workflow API,
 allowing a developer to test Github Actions on a
