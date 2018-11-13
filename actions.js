@@ -21,13 +21,13 @@ function recurseNeeds (workflow, action, list) {
         if (list.includes(action.needs)) {
             throw Error("Recursive workflow.");
         }
-        recurseNeeds(workflow, requirement, list)
+        return recurseNeeds(workflow, requirement, list)
     }).concat()
 }
 
 function runStack(callstack, handler, context) {
-    callstack.forEach((container) => {
-        handler(container, context);
+    callstack.forEach((action) => {
+        handler(action, context);
     });
 }
 
